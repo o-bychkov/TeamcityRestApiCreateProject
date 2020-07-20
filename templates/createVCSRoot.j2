@@ -1,0 +1,24 @@
+{
+ "name": "{{ projectName }}",
+ "project": { "id": "{{ projectID }}" },
+ "properties": { "property": [
+                               {"name": "authMethod",
+                                "value": "PASSWORD"},
+                               {"name": "branch",
+                                "value": "refs/heads/master"},
+                               {"name": "ignoreKnownHosts",
+                                "value": "true"},
+                               {"name": "secure:password",
+                                "value": "{{ password }}"},
+                               {"name": "submoduleCheckout",
+                                "value": "CHECKOUT"},
+                               {"name": "url",
+                                "value": "{{ gitRepoURL }}"},
+                               {"name": "useAlternates",
+                                "value": "true"},
+                               {"name": "username",
+                                "value": "{{ user }}"},
+                               {"name": "usernameStyle",
+                                "value": "USERID"}]},
+ "vcsName": "jetbrains.git"
+ }
